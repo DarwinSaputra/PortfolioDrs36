@@ -1,0 +1,216 @@
+*{
+    padding :0;
+    margin:0;
+    font-family: 'Quiksand', sans-serif;
+    color:black;
+}
+header {
+    height:70px;
+    background-color: #AFEEEE;
+}
+header h1 {
+    display: inline-block;
+    padding:15px 24px;
+    text-transform: uppercase;
+}
+header h1 a {
+    transition: .4s;
+}
+header h1 a:hover {
+    color: #0866f8;
+}
+header ul {
+    float:right;
+}
+ header ul li {
+    padding:24px;
+    display: inline-block;
+}
+header ul li a {
+    transition: .4s;
+}
+
+ header ul li a:hover {
+    color:#0866f8;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin:0 auto;
+}
+.container::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.menu-mobile {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+.menu-mobile:hover{
+    cursor: pointer;
+}
+#check {
+    display:none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(5, 15, 70, .9);
+    transition: .4s;
+    z-index: 999;
+}
+.sidebar ul li a {
+    color: #ffffff;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .4s;
+}
+.sidebar ul li:hover {
+    background-color:#0866f8;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+.Banner {
+    background-color: #0ac2c5;
+    padding: 120px 0;
+}
+section {
+    padding: 50px 0;
+}
+.Banner img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #dddddd ;
+    margin-bottom: 10px;
+}
+.Banner h2,
+.Banner p,
+.Banner span {
+    color: #ffffff;
+}
+.Banner h2 {
+    margin-bottom: 10px;
+}
+.Banner p {
+    font-size: 18px;
+}
+.Banner-left {
+    padding-left: 24px;
+}
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 25px;
+    position: relative;
+}
+section h3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #dddddd;
+    left: calc(50% - 60px);
+}
+section h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: rgba(6, 6, 148, 0.856);
+    left: calc(50% - 20px);
+}
+#About  p{
+    text-align: justify;
+    text-indent: 35px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+#Biography h3,
+#Skills h3,
+#Biography h3,
+#Educational h3,
+#Contact h3 {
+    color: #917979;
+}
+#Biography p {
+    text-align: center;
+    padding: 12px;
+}
+#Educational p {
+    text-align: center;
+    padding: 12px;
+}
+#Skills h4{
+    margin-left: 5px;
+}
+#Skills .bar{
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin: 5px 0 20px 0;
+}
+.bar .nilai  {
+    height: 30px;
+    background-color:#0866f8;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+}
+.trade {
+    width: 65%;
+}
+.office {
+    width: 85%;
+}
+.wushu {
+    width: 75%;
+}
+.coulum-3 {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 10px 5px;
+}
+.coulum-3 h4 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 5px;
+}
+footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 40px;
+    margin-top: 250px;
+}
+footer small {
+    color: #dddddd;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px){
+    .menu-mobile{
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    .coulum-3 {
+        width: 100%;
+    }
+}
